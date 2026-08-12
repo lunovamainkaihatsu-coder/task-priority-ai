@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Priority AI
 
-## Getting Started
+タスクの優先順位を自動で判定する業務効率化ツールです。
 
-First, run the development server:
+## 概要
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+締切・重要度・緊急度・所要時間を入力すると、それぞれの条件からスコアを計算し、タスクの優先順位を判定します。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+現在はReact / Next.js / TypeScriptの学習を兼ねて開発しています。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 主な機能
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* タスクの登録
+* 締切の設定
+* 重要度の設定
+* 緊急度の設定
+* 所要時間の設定
+* 優先順位の自動判定
+* 判定スコアの表示
+* 判定理由の表示
+* タスクの完了・未完了切り替え
+* タスクの削除
+* タスク完了率の表示
 
-## Learn More
+## 優先順位
 
-To learn more about Next.js, take a look at the following resources:
+入力された情報をもとにスコアを計算し、以下の4段階で判定します。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* 今すぐやる
+* 今日中にやる
+* 今週やる
+* 後回し
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 使用技術
+ 
+* Next.js
+* React
+* TypeScript
+* CSS
 
-## Deploy on Vercel
+## 現在の開発状況
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+現時点では、AI APIによる判定ではなく、設定したルールとスコアによって優先順位を判定しています。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+コードを作成するだけでなく、自分で内容を理解できるように、React・TypeScript・Git / GitHubについて学習しながら開発を進めています。
+
+## 今後の予定
+
+* コードの理解を深める
+* UI・操作性の改善
+* 判定ロジックの改善
+* 必要に応じてAIを利用した優先順位判定を検討
